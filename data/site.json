@@ -1,0 +1,57 @@
+{
+  "name": "Debabrata Pati",
+  "tagline": "Full Stack Lead Data Scientist",
+  "bio_html": "<p>Senior AI/ML professional with patented innovations commercialized into enterprise platforms. Guides teams from researchto operational AI/ML products, driving outcomes including a 14% sales uplift within 6 months via AI personalization, ~30%AML false positive reduction within two quarters, and 75% SAR generation time optimization.</p>",
+  "location": "Den Haag, Netherlands",
+  "mobile": "+31645511153",
+  "phone": "+31645511153",
+  "email": "debabrata.fin@gmail.com",
+  "contact_note": "References & contacts will be furnished up on request.",
+  "social": [
+    { "name": "LinkedIn", "url": "https://www.linkedin.com/in/debabrata-pati-78a0b266/" },
+    { "name": "GitHub", "url": "https://github.com/DebYogi" },
+    { "name": "Medium", "url": "https://medium.com/@debabrata.fin" },
+    { "name": "Patents", "url": "https://patents.google.com/?inventor=Debabrata+PATI" }
+  ],
+
+  "interests": ["Cricket","Meditation","Food"],
+  "languages": ["English","Hindi","Dutch-Learning"],
+  "theme": {
+    "gradientStart": "#081726",
+    "gradientEnd": "#102b3a",
+    "surface": "#0f2636",
+    "card": "#0b2a3a",
+    "text": "#e8f1f6",
+    "muted": "#9fb3c9",
+    "accent": "#2b98a4",
+    "accent-2": "#1f7f88",
+    "link": "#2891a2",
+    "font": "Inter, system-ui, -apple-system, 'Segoe UI', Roboto",
+    "transitionSpeed": "350ms",
+    "background": {
+      "light": {
+        "gradientStart": "#f8fafb",
+        "gradientEnd": "#eef6f7",
+        "surface": "#ffffff",
+        "card": "#f7fbfb",
+        "text": "#0b1220",
+        "muted": "#5b6b75"
+      },
+      "dark": {
+        "gradientStart": "#061523",
+        "gradientEnd": "#0b2430",
+        "surface": "#0c2530",
+        "card": "#071a24",
+        "text": "#e6f2f7",
+        "muted": "#7f98a6"
+      },
+      "default": "dark"
+    }
+  },
+  "photosFolder": "assets/photos",
+  "avatar": "assets/Deb.svg",
+  "profile_summary": "Innovator & Data Analytics Proffesional| Lead Data Scientist at Aktana | Indian School of Business Alum | Multiple Patent Holder | Forever Student",
+  "resume": { "url": "assets/Resume_Deb_2512.pdf", "text": "Download Resume (PDF)" },
+  "experience_summary": "Senior Data Scientist with extensive experience leading AI/ML R&D and deployment across global organizations including Aktana, NICE Actimize, and Cognizant. Currently leading advanced analytics and personalization initiatives in pharma omnichannel marketing, delivering double-digit sales uplift through propensity modeling, counterfactual analysis, journey optimization, and reinforcement learning. Architected scalable MLOps and model factory frameworks, cutting deployment timelines by 50%. Previously spearheaded AI-driven AML and financial crime detection systems, reducing false positives by ~30% and automating SAR generation to cut investigation time by 75%. Strong background in graph analytics, NLP, experimentation, and regulatory-grade AI solutions. Earlier career includes large-scale fraud detection, pricing optimization, and cloud/data-center migration analytics across BFS and enterprise domains. Recognized inventor with multiple international patents and award-winning contributions.",
+  "experience_highlights": ["Senior AI/ML Proffesional Driving Enterprise-Scale Intelligence","From Patents to Production: AI That Delivers Measurable Business Impact"]
+} 

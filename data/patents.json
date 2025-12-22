@@ -1,0 +1,45 @@
+[
+  {
+    "id": "US20230050193",
+    "title": "Probabilistic feature engineering technique for anomaly detection",
+    "url": "https://patents.google.com/patent/US20230050193A1/en",
+    "summary": "A computerized-method for generating a dataset for a Machine Learning (ML) model for an increased accurate financial crime detection from an initiation stage of the ML model implementation. The computerized-method includes retrieval of financial transaction records from a database of financial transaction records to arrange a dataset of financial transaction records, according to preconfigured techniques. Then, processing the records in the dataset; Then, operating feature engineering on preselected anomalous related features to yield probabilistic categorical features and to yield probabilistic numerical features, and then combining the probabilistic categorical features with the probabilistic numerical features to generate a complex features dataset, and providing the probabilistic categorical features, the probabilistic numerical features and the complex features dataset to an ML model, thus, increasing accuracy of detection that is performed right from an initiation stage of the ML model implementation.",
+    "image": "photos/patent-US20230050193.svg"
+  },
+  {
+    "id": "US2021334822",
+    "title": "Systems and methods for detecting unauthorized or suspicious financial activity - Graph Analytics",
+    "url": "https://patents.google.com/patent/US20210334822A1/en",
+    "summary": "In a method for detecting unauthorized or suspicious financial activity, a graph convolutional network for financial crime prevention, a separate node is created for each entity: each account, each person, each address (e.g. email address), etc. Separate attributes are provided to aggregate transactions in which the node acts as a sender; transactions in which the node acts as a receiver; transactions using a specific channel (e.g. ATM); and transactions of a specific type (e.g. online money transfer). In some embodiments, the attributes exclude data on individual transactions to reduce the amount of data and hence provide more effective computer utilization. The approach is suitable for many applications, including anti-money laundering. Other features are also provided, as well as systems for such detection.",
+    "image": "photos/patent-US2021334822.svg"
+  },
+  {
+    "id": "US12469007",
+    "title": "Automatic generation of a two-part readable suspicious activity report (SAR) from high-dimensional data in tabular form",
+    "url": "https://patents.google.com/patent/US10987654B1",
+    "summary": "A computerized-method for automatically generating a two-part readable Suspicious Activity Report (SAR) from high-dimensional data in tabular form is provided herein. The computerized-method may include receiving high-dimensional data in tabular form of evidence financial transactions to be reported under Anti Money Laundering (AML) regulations. Then, displaying the received data to a Subject Matter Expert (SME) for ordering each displayed transaction in a predefined construction; Then, training one or more Natural Language Generation (NLG) translation models, for each transaction type, according to a deep learning model. Then, operating the one or more NLG translation models on each transaction type to generate for each transaction type a narrative of SAR; Then, operating a prebuilt summary model on the generated narrative of SAR of each transaction type to generate a summary of the plurality of narratives of SAR; and combining the plurality of narratives of SAR and the summary to one SAR.",
+    "image": "photos/patent-US12469007.svg"
+  },
+
+  {
+    "id": "EP4433971/HK40113399/US20240362673",
+    "title": "Systems and methods for goal-driven contextual omnichannel optimization using well-rounded artificial intelligence ",
+    "url": "https://patents.google.com/patent/US20240362673A1/en",
+    "summary": "Systems and methods for using models to optimize suggestions for long-term and short-term goals are disclosed. In one aspect, a method may include receiving input data associated with promotion of a product to one or more target entities, and defining a plurality of temporal goals for attainment based at least in part on the input data. The plurality of temporal goals may be classified into at least two categories of different timescales. The method may further include providing the plurality of temporal goals and a set of constraints to an optimization model comprising an objective function, and using the optimization model to generate a set of multi-dimensional actions with predicted action values for at least a subset of the plurality of channels. The predicted action values can collectively maximize an impact value of the objective function while balancing a feasibility of the plurality of temporal goals with respect to one another.",
+    "image": "photos/patent-US20240362673.svg"
+  },
+  {
+    "id": "WO2025159896",
+    "title": "Systems and methods for goal-driven journey generation using artificial intelligence.",
+    "url": "https://patents.google.com/patent/WO2025159896A1/en",
+    "summary": "Systems and methods for providing omnichannel cognition in a campaign are disclosed. An example platform can include a strategy hub configured to generate and provide a unified and real-time graphical interactive interface displaying an effectiveness of the campaign, wherein the strategy hub is further configured to allow users to dynamically connect strategies to tactics and track key performance indicators (KPIs) while making real-time adjustments and rebalancing of efforts across multiple channels to optimize campaign engagement; a tactic engine configured to utilize a generative artificial intelligence (GenAI) model for analysis and restacking of the tactics to generate an optimal tactic mix that improves engagement efficiency and outcomes based on predicted impact levels of the tactics; and an impact simulator configured to provide a virtual platform for simulating the campaign through virtual trials, to assess an effectiveness of the campaign prior to roll-out of the campaign.",
+    "image": "photos/patent-WO2025159896.svg"
+  },
+  {
+    "id": "US2022108133",
+    "title": "Sharing financial crime knowledge",
+    "url": "https://patents.google.com/patent/US20220108133A1/en",
+    "summary": "A computerized-method for scaling automatic deployment of a machine-learning detection model in a cloud-based managed analytics service by knowledge sharing to overcome an imbalanced dataset learning problem, is provided herein. The computerized-method includes: sending the received data to machine-learning models to synthesize patterns of the received data to yield a deferential privacy data; maintaining in the database the deferential privacy data of one or more on-prem cloud-based managed analytics services to generate a consortium shared synthetic data lake; operating phases of machine-learning detection model based on the received data and data in the database to create a packaged model. The data in the database is aggregated and used during the operating phases of the machine-learning detection model to create a packaged model for other on-prem cloud-based managed analytics services, thus overcoming imbalanced dataset learning thereof, and after the packaged model is created it is automatically deployed on-prem.",
+    "image": "photos/patent-US2022108133.svg"
+  }
+]

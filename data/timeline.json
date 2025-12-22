@@ -1,0 +1,62 @@
+{
+  "experience": [
+    {
+      "start": "2020 September",
+      "end": "2005 Nov",
+      "role": "Lead Data Scientist",
+      "organization": "Aktana USA",
+      "location": "Den Haag, Netherlands - Remote",
+      "summary": "Led the R&D and execution of strategic marketing initiatives to drive brand growth andcustomer engagement in the product suite."
+    },
+    {
+      "start": "2017 March",
+      "end": "2020 August",
+      "role": "Senior Specialist Data scientist",
+      "organization": "Nice Actimize",
+      "location": "India - Pune",
+      "summary": " Led the research and deployment of AI/ML solutions for AML and financial crime detection, improving system accuracy, reducing false positives, and automating SAR reporting."
+    },
+    {
+      "start": "2016 January",
+      "end": "2017 February",
+      "role": "Senior Associate - Data Scientist",
+      "organization": "Cognizant",
+      "location": "India - Pune",
+      "summary": "Led the design and deployment of machine learning models for payment fraud detection and pricing optimization, while also developing graph-based analytics and freight cost optimization for enterprise clients."
+    },
+    {
+      "start": "2007 January",
+      "end": "2017 January",
+      "role": "Senior Associate - Banking & Finance",
+      "organization": "Cognizant",
+      "location": "India - Pune / Norway - Oslo",
+      "summary": "Managed mission-critical risk platforms for major financial clients, ensured data integrity, and led large-scale data center migrations and automation projects to enhance operational efficiency and oversight."
+    }
+  ],
+  "education": [
+    {
+      "start": "2017",
+      "end": "2019",
+      "degree": "M.Tech in Software Systems-Data Science",
+      "institution": "Birla Institute of Technologyand Science (BITS)",
+      "location": "India",
+      "summary": "Thesis: Explanation andInterpretation of MachineLearning Models in FinancialCrime Detection."
+    },
+    {
+      "start": "2015",
+      "end": "2016",
+      "degree": "Post Graduate Diplomain Business Analytics",
+      "institution": "Indian School of Business (ISB)",
+      "location": "India",
+      "summary": "Internship: FreightOptimization using Analytics(Deloitte)"
+    },
+    {
+      "start": "2002",
+      "end": "2006",
+      "degree": "B.STech. Electrical & Electronics Engineering",
+      "institution": "Biju Patnaik University of Technology",
+      "location": "India",
+      "summary": "Electives - Power systems."
+    }
+  ]
+}
