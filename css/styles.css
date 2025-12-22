@@ -490,6 +490,14 @@ section > * { position: static; z-index: auto }
 .container { max-width: calc(var(--container-max) + 4cm); }
 body { overflow-x: visible; }
 
+/* Remove left-shift for smaller screens (tablets/phones) to prevent horizontal clipping */
+@media (max-width: 900px) {
+  .content-wrap { transform: none !important; width: 100% !important; }
+  .container { max-width: 100% !important; padding-left: 1rem; padding-right: 1rem; }
+  h2 { font-size: 1.35rem; }
+  html { scroll-padding-top: 68px; }
+}
+
 @media (max-width: 768px) {
   /* smaller shift and width on mobile */
   .content-wrap { transform: translateX(-1.5cm); width: calc(100% + 1.5cm); }
