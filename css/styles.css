@@ -355,6 +355,11 @@ section > * { position: static; z-index: auto }
 @media (max-width:480px) {
   .patents-list, .project-grid, .certificates-grid { grid-template-columns: 1fr !important; gap: 1rem; }
   .rec { flex: 0 0 92%; }
+  /* On very small phones, remove left shift and prevent horizontal overflow */
+  .content-wrap { transform: translateX(0) !important; width: 100% !important; }
+  .container { max-width: 100% !important; padding-left: 1rem; padding-right: 1rem; }
+  .nav { padding-left: 0.75rem; }
+  body { overflow-x: hidden; }
 }
 
 /* Projects — align with Patents styles */
