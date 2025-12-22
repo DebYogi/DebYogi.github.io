@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Personal Site</title>
+  <meta name="description" content="Professional Profile" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23081726'/%3E%3Ctext x='50' y='57' font-size='52' text-anchor='middle' fill='white' font-family='Arial'%3EP%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  
+  <header class="site-header" role="banner">
+    <nav class="nav container">
+      <a class="brand" href="#">Debabrata Pati</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <ul class="nav-links">
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#patents">Patents</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#recommendations">Recommendations</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">🌙</button></li>
+        <li><button id="font-toggle" class="theme-btn" aria-label="Toggle fixed-width font">𝙼</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="content-wrap">
+    <main id="main" role="main">
+    <!-- 1. Profile and profile summary + Social media -->
+    <section id="profile" class="profile container reveal">
+      <div class="profile-inner profile-columns">
+        <div class="profile-left">
+          <div class="profile-info">
+            <h1 class="name-lg">Your Name</h1>
+            <div class="profile-meta">
+              <span class="profile-location" aria-hidden="false"></span>
+              <a id="profile-phone" class="profile-phone" href="tel:"></a>
+              <a id="profile-email" class="profile-email" href="mailto:you@example.com"></a>
+            </div>
+            <p id="profile-summary" class="profile-summary"><!-- loaded from data/site.json --> </p>
+            <div id="social-links" class="socials-icons" aria-label="social links"> <!-- social icons populated --> </div>
+
+            <div id="experience-summary" class="experience-summary" aria-label="Experience summary">
+              <div class="summary-frame"><p id="summary-text" class="summary-text"></p></div>
+              <ul id="summary-bullets" class="summary-bullets" aria-hidden="false"></ul>
+            </div>
+
+            <!-- Interests moved below the summary -->
+            <div class="side-sections">
+              <div id="interests" class="profile-sidebar">
+                <h4>Interests</h4>
+                <!-- interests populated by JS -->
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <aside class="profile-right">
+          <div class="photo-wrapper">
+             <img id="profile-photo" class="avatar" src="assets/avatar.svg" alt="Profile photo" width="140" height="140">
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 2. Patents (moved here after Profile) -->
+    <section id="patents" class="container patents reveal">
+      <h2>Patents</h2>
+      <div id="patents-list" class="patents-list"></div>
+    </section>
+
+    <!-- 3. Timeline (Experience) + Micro animations -->
+    <section id="experience" class="container timeline reveal">
+      <h2>Experience</h2>
+      <div class="timeline-wrap">
+        <div class="timeline-col timeline-experience">
+          <div id="timeline-experience" class="timeline-list"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- patents moved above to avoid sidebar blank space -->
+
+    <!-- 4. Education (2 line summary) -->
+    <section id="education" class="container education reveal">
+      <h2>Education</h2>
+       <div class="timeline-wrap">
+        <div class="timeline-col timeline-education">
+           <div id="timeline-education" class="timeline-list"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Languages -->
+    <section id="languages" class="container languages reveal">
+      <h2>Languages</h2>
+      <div id="languages-list" class="languages-list">
+        <!-- Populated from data/site.json by script.js -->
+      </div>
+    </section>
+
+    <!-- 5. Projects -->
+    <section id="projects" class="container projects reveal">
+      <h2>Projects</h2>
+      <div class="project-grid"></div>
+    </section>
+
+    <!-- 5b. Certificates -->
+    <section id="certificates" class="container certificates reveal">
+      <h2>Certificates</h2>
+      <div id="certificates-list" class="certificates-grid"></div>
+    </section>
+
+    <!-- 6. Blog Posts -->
+    <section id="blog" class="container blog reveal">
+      <h2>Blog Posts</h2>
+      <ul id="posts" class="posts"></ul>
+    </section>
+
+    <!-- 7. Recommendations (Micro animation screenshots) -->
+    <section id="recommendations" class="container reveal">
+      <h2>Recommendations</h2>
+      <div id="recs" class="recs-grid"></div>
+    </section>
+
+    <!-- 8. Contact (Email + Detailed Note) -->
+    <section id="contact" class="container contact reveal">
+      <h2>Contact</h2>
+      <p id="contact-text"> <a id="contact-email" href="mailto:you@example.com">you@example.com</a></p>
+      <p id="contact-phone-line" class="contact-phone-line">Mobile: <a id="contact-phone" href="tel:"></a></p>
+      <p id="contact-note" class="contact-note">References and full contact details will be furnished on requests.</p>
+    </section>
+
+    <!-- 9. Resume (PDF link) -->
+    <section id="resume" class="container resume reveal">
+      <h2>Resume</h2>
+      <div class="resume-wrap">
+        <p><a id="resume-link" href="#" target="_blank" rel="noopener">Download Resume (PDF)</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> <span class="footer-name">Your Name</span></small>
+    </div>
+  </footer>
+  </div> <!-- /.content-wrap -->
+
+  <nav class="mobile-nav" aria-label="Mobile navigation" hidden>
+    <!-- populated by JS -->
+  </nav>
+
+  <script src="js/script.js?v=2"></script>
+</body>
+</html>
