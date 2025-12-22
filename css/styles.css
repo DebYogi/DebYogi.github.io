@@ -492,10 +492,23 @@ body { overflow-x: visible; }
 
 /* Remove left-shift for smaller screens (tablets/phones) to prevent horizontal clipping */
 @media (max-width: 900px) {
+  /* Remove left shift and give a comfortable left gutter so content is not clipped */
   .content-wrap { transform: none !important; width: 100% !important; }
-  .container { max-width: 100% !important; padding-left: 1rem; padding-right: 1rem; }
+  .container { max-width: 100% !important; padding-left: 2rem; padding-right: 1.25rem; }
+
+  /* Make header brand flow instead of overlapping content */
+  .brand { position: static; transform: none; margin-right: 0.5rem; }
+  .nav { padding-left: 0.5rem; }
+
+  /* Reduce heading sizes on narrower screens to avoid wrapping and clipping */
+  h1 { font-size: 1.9rem; }
   h2 { font-size: 1.35rem; }
-  html { scroll-padding-top: 68px; }
+
+  /* Make sure the sticky header doesn't occlude the first content lines */
+  :root { --header-height: 68px; }
+  .site-header { height: var(--header-height); }
+  main { padding-top: calc(var(--header-height) + 0.5rem); }
+  html { scroll-padding-top: var(--header-height); }
 }
 
 @media (max-width: 768px) {
