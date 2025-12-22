@@ -55,6 +55,46 @@ document.addEventListener('DOMContentLoaded', () => {
       document.documentElement.setAttribute('data-font', 'mono');
       if(fontBtn) fontBtn.textContent = '𝙼';
     } else if(fontBtn){ fontBtn.textContent = 'm' }
+
+    // Mobile navigation: clone the primary nav links into a touch-friendly overlay and wire up toggle
+    try{
+      const navToggle = document.querySelector('.nav-toggle');
+      const mobileNav = document.querySelector('.mobile-nav');
+      const navLinks = document.querySelector('.nav-links');
+      if(navToggle && mobileNav && navLinks){
+        // build a simple header for the mobile menu with a close control
+        const header = document.createElement('div');
+        header.style.display = 'flex'; header.style.alignItems = 'center'; header.style.justifyContent = 'space-between';
+        const title = document.createElement('div'); title.textContent = 'Menu'; title.style.fontWeight = '800'; title.style.fontSize = '1.05rem'; title.style.color = 'var(--text-main)';
+        const closeBtn = document.createElement('button'); closeBtn.className = 'mobile-close'; closeBtn.textContent = '✕'; closeBtn.setAttribute('aria-label','Close Menu');
+        header.appendChild(title); header.appendChild(closeBtn);
+        // append header then the cloned links
+        mobileNav.appendChild(header);
+        // clone the links to avoid moving the original nodes
+        const clone = navLinks.cloneNode(true);
+        // remove any interactive theme/font buttons that shouldn't duplicate in mobile nav (optional)
+        clone.querySelectorAll('#theme-toggle, #font-toggle').forEach(n=>n.remove());
+        // convert the list items to block anchors
+        const anchors = Array.from(clone.querySelectorAll('a')).map(a => { a.setAttribute('role','menuitem'); return a; });
+        // append each anchor as top-level element in mobile nav
+        anchors.forEach(a => {
+          const el = document.createElement('a');
+          el.href = a.href || '#';
+          el.target = a.target || '';
+          el.rel = a.rel || '';
+          el.innerHTML = a.textContent || a.innerText || 'Link';
+          mobileNav.appendChild(el);
+        });
+
+        function closeMobile(){ mobileNav.classList.remove('open'); mobileNav.setAttribute('hidden',''); navToggle.setAttribute('aria-expanded','false'); document.body.style.overflow = ''; }
+        function openMobile(){ mobileNav.classList.add('open'); mobileNav.removeAttribute('hidden'); navToggle.setAttribute('aria-expanded','true'); document.body.style.overflow = 'hidden'; }
+
+        navToggle.addEventListener('click', (e)=>{ e.preventDefault(); if(mobileNav.classList.contains('open')) closeMobile(); else openMobile(); });
+        closeBtn.addEventListener('click', (e)=>{ e.preventDefault(); closeMobile(); });
+        mobileNav.addEventListener('click', (e)=>{ if(e.target.tagName.toLowerCase() === 'a') closeMobile(); });
+        document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') closeMobile(); });
+      }
+    }catch(e){ console.warn('mobile nav setup failed', e) }
 });
 
 async function loadData() {
