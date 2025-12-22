@@ -32,7 +32,7 @@ This repository is a minimal, responsive personal website template that works we
      git add .
      git commit -m "Initial site"
      git branch -M main
-     git remote add origin https://github.com/<your-username>/<your-username>.github.io.git
+     git remote add origin https://github.com/DebYogi/DebYogi.github.io.git
      git push -u origin main
      ```
 
